@@ -31,8 +31,7 @@
   
 /* START of Figure and Image Styling */
   .team-info figure {
-    float: right;
-    margin: 0 0 1rem 1rem;
+    margin: 0 auto;
     max-width: 300px;
   }
   
