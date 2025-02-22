@@ -44,172 +44,111 @@
     
     <!--END Banner-->
 
-
-    <!--Start Form-->
-    
      <!--Start Form-->
 <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
     
-    <div class="form-container-job-apply">
-
-    <tr align="left">
-        <td>Job reference number</td>
-        <td>
-            <form class="form-job-number">
-                <label for=""></label>
-                <input type="text" pattern="[A-Za-z0-9]{5}" placeholder="exactly 5 alpha characters" title="Must be exactly 5 alphanumeric characters" required>
-            </form>
-        </td>
-    </tr>
-
-    <tr align="left">
-        <td>First name</td>
-        <td>
-            <form>
-                <label for=""></label>
-                <input type="text" maxlength="20" placeholder="max 20 alpha characters">
-            </form>
-        </td>
-    </tr>
-        
-    <tr align="left">
-        <td>Last name</td>
-        <td>
-            <form>
-                <label for=""></label>
-                <input type="text" maxlength="20" placeholder="max 20 alpha characters">
-            </form>
-        </td>
-    </tr>
-
-    <tr align="left">
-        <td>Date of birth</td>
-        <td>
-            <form>
-                <label for=""></label>
-                <input type="date">
-            </form>
-        </td>
-    </tr>
-
-    <tr align="left">
-        <td>Gender</td>
-        <td>
-            <form>
-                <label for="male">Male</label>
-                <input type="radio" name="gender" id="male" value="male">
-
-                <label for="female">Female</label>
-                <input type="radio" name="gender" id="female" value="female">
-
-                <label for="other">Other</label>
-                <input type="radio" name="gender" id="other" value="other">
-            </form>
-        </td>
-    </tr>
-
-    <tr align="left">
-        <td>Street Address</td>
-        <td>
-            <form>
-                <label for=""></label>
-                <input type="text" maxlength="40" placeholder="max 40 characters">
-            </form>
-        </td>
-    </tr>
-
-    <tr align="left">
-        <td>Suburb/Town</td>
-        <td>
-            <form>
-                <label for=""></label>
-                <input type="text" maxlength="40" placeholder="max 40 characters">
-            </form>
-        </td>
-    </tr>
-
-    <tr align="left">
-        <td>State</td>
-        <td>
-            <form>
-                <label for=""></label>
-                <select required>
-                    <option value="disabled selected">Select an option</option>
-                    <option value="vic">VIC</option>
-                    <option value="NSW">NSW</option>
-                    <option value="QLD">QLD</option>
-                    <option value="NT">NT</option>
-                    <option value="WA">WA</option>
-                    <option value="SA">SA</option>
-                    <option value="TAS">TAS</option>
-                    <option value="ACT">ACT</option>
+          <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+            <div class="form-container-job-apply">
+              <div class="form-label">
+                <label for="jobRef">Job reference number</label>
+                <input type="text" id="jobRef" name="jobRef" pattern="[A-Za-z0-9]{5}" placeholder="exactly 5 alpha characters" title="Must be exactly 5 alphanumeric characters" required>
+              </div>
+              
+              <div class="form-label">
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="firstName" maxlength="20" placeholder="max 20 alpha characters" required>
+              </div>
+              
+              <div class="form-label">
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="lastName" maxlength="20" placeholder="max 20 alpha characters" required>
+              </div>
+              
+              <div class="form-label4">
+                <label for="dob">Date of birth</label>
+                <input type="date" id="dob" name="dob" required>
+              </div>
+              
+              <div class="form-label5">
+                <label for="gender">Gender</label>
+                <div class="radio-group">
+                  <input type="radio" id="male" name="gender" value="male">
+                  <label for="male">Male</label>
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">Female</label>
+                  <input type="radio" id="other" name="gender" value="other">
+                  <label for="other">Other</label>
+                </div>
+              </div>
+              
+              <div class="form-label6">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="address" maxlength="40" placeholder="max 40 characters" required>
+              </div>
+              
+              <div class="form-label7">
+                <label for="suburb">Suburb/Town</label>
+                <input type="text" id="suburb" name="suburb" maxlength="40" placeholder="max 40 characters" required>
+              </div>
+              
+              <div class="form-label">
+                <label for="state">State</label>
+                <select id="state" name="state" required>
+                  <option value="">Select an option</option>
+                  <option value="VIC">VIC</option>
+                  <option value="NSW">NSW</option>
+                  <option value="QLD">QLD</option>
+                  <option value="NT">NT</option>
+                  <option value="WA">WA</option>
+                  <option value="SA">SA</option>
+                  <option value="TAS">TAS</option>
+                  <option value="ACT">ACT</option>
                 </select>
-            </form>
-        </td>
-    </tr>
-
-        <tr align="left">
-        <td>Postcode</td>
-        <td>
-            <form>
-                <label for=""></label>
-                <input type="text" pattern="\d{4}" title="Must be exactly 4 digits" placeholder="1234" required>
-            </form>
-        </td>
-    </tr>
-
-    <tr align="left">
-        <td>Email address</td>
-        <td>
-            <form>
-                <label for=""></label>
-                <input type="email" placeholder="camapbonchan@gmail.com" required>
-            </form>
-        </td>
-    </tr>
-
-    <tr align="left">
-        <td>Phone number</td>
-        <td>
-            <form>
-                <label for=""></label>
-                <input type="text" pattern="[0-9]{8,12}" title="Phone number must be 8 to 12 digits or spaces" required>
-            </form>
-        </td>
-    </tr>
-
-    <tr align="left">
-        <td>Skill list</td>
-        <td>
-            <form>
-                <label for="skill1">HTML</label>
-                <input type="checkbox" id="skill1" name="skill" value="skill1">
-                
-                <label for="skill2">CSS</label>
-                <input type="checkbox" id="skill2" name="skill" value="skill2">
-
-                <label for="skill3">JavaScript</label>
-                <input type="checkbox" id="skill3" name="skill" value="skill3">
-            </form>
-        </td>
-    </tr>
-
-    <tr align="left">
-        <td>Other skills</td>
-        <td>
-            <form>
-                <label for=""></label>
-                <input type="text">
-            </form>
-        </td>
-    </tr>
-</table>
-
-<form>
-    <input type="submit">
-
-    <input type= "submit" value="Register"/>
-    <input type= "reset" value="Reset Form"/>
+              </div>
+              
+              <div class="form-label">
+                <label for="postcode">Postcode</label>
+                <input type="text" id="postcode" name="postcode" pattern="\d{4}" title="Must be exactly 4 digits" placeholder="1234" required>
+              </div>
+              
+              <div class="form-label">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="camapbonchan@gmail.com" required>
+              </div>
+              
+              <div class="form-label">
+                <label for="phone">Phone number</label>
+                <input type="text" id="phone" name="phone" pattern="[0-9]{8,12}" title="Phone number must be 8 to 12 digits" placeholder="1234567890" required>
+              </div>
+              
+              <div class="form-label">
+                <label>Skills</label>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="skill1" name="skills" value="HTML">
+                  <label for="skill1">HTML</label>
+                  <input type="checkbox" id="skill2" name="skills" value="CSS">
+                  <label for="skill2">CSS</label>
+                  <input type="checkbox" id="skill3" name="skills" value="JavaScript">
+                  <label for="skill3">JavaScript</label>
+                </div>
+              </div>
+              
+              <div class="form-label">
+                <label for="otherSkills">Other skills</label>
+                <textarea id="otherSkills" name="otherSkills" rows="4" cols="50"></textarea>
+              </div>
+              
+              <div class="form-buttons">
+                <input type="submit" value="Apply">
+                <input type="reset" value="Reset Form">
+              </div>
+            </div>
+          </form>
+          
+          <div class="employee-benefits">
+            <h2>Employee Benefits</h2>
+            <!-- Content for employee benefits -->
+          </div>
 
 </form>
 </div>

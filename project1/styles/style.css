@@ -449,5 +449,35 @@ header{
     margin: auto;
 }
 
+.banner-apply h1{ 
+    text-align: center;
 
-    
+}
+
+.form-label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.form-label label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    align-content: center;
+}
+.form-label input{
+    font-size: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    align-content: center
+}    
+
+.iframe-container{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width
+}
