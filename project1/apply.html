@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Page</title>
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+    <h1><img src="C:\Users\Hi Windows 11 Home\Pictures\suitcase.png" width="30" height="30">Job Portal</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="enhancements.html">Enhancements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+        <tr align="left">
+            <td>Job reference number</td>
+            <td>
+                <form>
+                    <label for=""></label>
+                    <input type="text" pattern="[A-Za-z0-9]{5}" placeholder="exactly 5 alpha characters" title="Must be exactly 5 alphanumeric characters" required>
+                </form>
+            </td>
+        <tr align="left">
+            <td>Job reference number</td>
+            <td>
+                <form>
+                    <label for=""></label>
+                    <input type="text" pattern="[A-Za-z0-9]{5}" placeholder="exactly 5 alpha characters" title="Must be exactly 5 alphanumeric characters" required>
+                </form>
+            </td>
+        </tr>
+
+        <tr align="left">
+            <td>First name</td>
+            <td>
+                <form>
+                    <label for=""></label>
+                    <input type="text" maxlength="20" placeholder="max 20 alpha characters">
+                </form>
+            </td>
+        </tr>
+            
+        <tr align="left">
+            <td>Last name</td>
+            <td>
+                <form>
+                    <label for=""></label>
+                    <input type="text" maxlength="20" placeholder="max 20 alpha characters">
+                </form>
+            </td>
+        </tr>
+
+        <tr align="left">
+            <td>Date of birth</td>
+            <td>
+                <form>
+                    <label for=""></label>
+                    <input type="date">
+                </form>
+            </td>
+        </tr>
+
+        <tr align="left">
+            <td>Gender</td>
+            <td>
+                <form>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+    
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+    
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" id="other" value="other">
+                </form>
+            </td>
+        </tr>
+
+        <tr align="left">
+            <td>Street Address</td>
+            <td>
+                <form>
+                    <label for=""></label>
+                    <input type="text" maxlength="40" placeholder="max 40 characters">
+                </form>
+            </td>
+        </tr>
+
+        <tr align="left">
+            <td>Suburb/Town</td>
+            <td>
+                <form>
+                    <label for=""></label>
+                    <input type="text" maxlength="40" placeholder="max 40 characters">
+                </form>
+            </td>
+        </tr>
+
+        <tr align="left">
+            <td>State</td>
+            <td>
+                <form>
+                    <label for=""></label>
+                    <select required>
+                        <option value="disabled selected">Select an option</option>
+                        <option value="vic">VIC</option>
+                        <option value="NSW">NSW</option>
+                        <option value="QLD">QLD</option>
+                        <option value="NT">NT</option>
+                        <option value="WA">WA</option>
+                        <option value="SA">SA</option>
+                        <option value="TAS">TAS</option>
+                        <option value="ACT">ACT</option>
+                    </select>
+                </form>
+            </td>
+        </tr>
+
+        <tr align="left">
+            <td>Postcode</td>
+            <td>
+                <form>
+                    <label for=""></label>
+                    <input type="text" pattern="\d{4}" title="Must be exactly 4 digits" placeholder="1234" required>
+                </form>
+            </td>
+        </tr>
+
+        <tr align="left">
+            <td>Email address</td>
+            <td>
+                <form>
+                    <label for=""></label>
+                    <input type="email" placeholder="camapbonchan@gmail.com" required>
+                </form>
+            </td>
+        </tr>
+
+        <tr align="left">
+            <td>Phone number</td>
+            <td>
+                <form>
+                    <label for=""></label>
+                    <input type="text" pattern="[0-9]{8,12}" title="Phone number must be 8 to 12 digits or spaces" required>
+                </form>
+            </td>
+        </tr>
+
+        <tr align="left">
+            <td>Skill list</td>
+            <td>
+                <form>
+                    <label for="skill1">HTML</label>
+                    <input type="checkbox" id="skill1" name="skill" value="skill1">
+                    
+                    <label for="skill2">CSS</label>
+                    <input type="checkbox" id="skill2" name="skill" value="skill2">
+
+                    <label for="skill3">JavaScript</label>
+                    <input type="checkbox" id="skill3" name="skill" value="skill3">
+                </form>
+            </td>
+        </tr>
+
+        <tr align="left">
+            <td>Other skills</td>
+            <td>
+                <form>
+                    <label for=""></label>
+                    <input type="text">
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <form>
+        <input type="submit">
+
+        <input type= "submit" value="Register"/>
+        <input type= "reset" value="Reset Form"/>
+
+    </form>
+
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d509004.415415665!2d144.7235038834284!3d-37.97156522388364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e1!3m2!1sen!2s!4v1740018193914!5m2!1sen!2s" 
+   width="600" 
+   height="450" 
+   style="border:0;" 
+   allowfullscreen="" 
+   loading="lazy" 
+   referrerpolicy="no-referrer-when-downgrade"
+   ></iframe>
+</form>      
+
+<table style="width:100%">
+    <tr>
+      <th>Job</th>
+      <th>Company</th>
+      <th>Job Categories</th>
+    </tr>
+    <tr>
+      <td>Join us to explore exciting opportunities, enhance your skills, and take the next step towards a furfilling professionaal journey.</td>
+      <td>About us</td>
+      <td>Telecommunications</td>
+      
+    </tr>
+    <tr>
+      <td></td>
+      <td>Our Team</td>
+      <td>Hotels & Tourism</td>
+      
+      
+    </tr>
+    <tr>
+      <td></td>
+      <td>Partners</td>
+      <td>Construction</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>For Candidates</td>
+      <td>Education</td>
+ 
+
+    </tr>
+    <tr>
+      <td></td>
+      <td>For employers</td>
+      <td>Financial Services</td>
+    </tr>
+  </table>
+
+  <p></p>
+<h1>Newsletter</h1>
+<p>Don't miss out on valuable resources that can help you achieve your professionals goals</p>
+<textarea id="comments" name="comments" placeholder=" " rows="7" cols="37"></textarea>
+<p></p>
+<span style="border: 1px solid black">Subscibe now</span>
+</body>
+</html>
