@@ -224,6 +224,20 @@ button a:hover{
     
 }
 
+.pagename{
+    
+    flex: 1;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 70px;
+}
+
+.pagename h1{
+    font-size: 40px;
+}
 .banner p{
     padding: 10px;
     font-size: 20px;
@@ -438,15 +452,18 @@ header{
     align-items: center;
 }
 
-.form-container-job-apply{
+.form-container-job-apply {
+    display: flex;         /* Enable Flexbox */
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center;   /* Center form elements horizontally */
+    max-width: 500px;      /* Set maximum width */
+    margin: 0 auto;        /* Center the container */
     background-color: rgba(0, 255, 13, 0.205);
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 500px;
-    align-items: center;
-    justify-content: center;
     padding: 30px;
-    margin: auto;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    margin-bottom : 50px;
 }
 
 .banner-apply h1{ 
@@ -473,11 +490,76 @@ header{
 }    
 
 .iframe-container{
-    display: flex;
+    display: flex;         /* Enable Flexbox */
+  flex-direction: column; /* Stack form elements vertically */
+  align-items: center;   /* Center form elements horizontally */
+  max-width: 100px;      /* Set maximum width */
+  margin: 0 o;        /* Center the container */
+  background-color: rgba(0, 255, 13, 0.205);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+
+}
+
+
+                       /*Job Page*/   
+.recentjobs{
+    font-size: 25px;
+    margin-left: 90px;
+}
+
+.job-container{
     margin: auto;
+    margin-top: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    background-color: rgb(229, 184, 255);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.job-container:hover{
+    transform: translateY(-5px);
+}
+
+.job-name h2{
+    margin: 0;
+    font-size: 30px;
+}
+
+.job-name p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.jobtags p{
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.job-description{
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    width
+}
+
+.job-description h2{
+    font-size: 30px;
+}
+
+.job-description p{
+    font-size: 20px;
+}
+
+i{
+    color: rgb(29, 192, 116);
 }
