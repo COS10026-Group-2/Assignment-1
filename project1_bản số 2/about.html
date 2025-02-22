@@ -10,17 +10,44 @@
     <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="apply.html">Apply</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="enhancements.html">Enhancements</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!--START Navigation Bar + Search Bar-->
+  <header>
+    <nav class="navbar">
+    <div class="container">
+      <div class="navdiv">
+        <a href="index.html" class="nav-brand">Job Portal</a>
+        <div class="navbar-div">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="enhancements.html">Enhancement</a></li>
+            <a href="" class="login">Login</a>
+            <button id="nav-button"><a href="">Register</a></button>
+          </ul> 
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="banner">
+    <div class="container">
+      <h1 class="banner-title">Find Your Dream Job Today!</h1>
+      <p>Connecting Talent with Opportunity: Your Gateway to Career Success</p>
+      <form>
+        <input type="text" class="search-input" placeholder="yurp">
+        <button type="submit" class="search-button">
+          <i class="ri-search-line"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  </header>
+                  <!--END Navigation Bar + Search Bar-->
 
     <main>
         <h1>About Our Team</h1>
@@ -126,8 +153,42 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 BitSmiths All rights reserved.</p>
-    </footer>
+    <section class="footer">
+        <div class="container2">
+          <div class="footer-section">
+            <h3>Job</h3>
+            <p>Join us to explore exciting opportunities, enhance your skills, and take the next step towards a fulfilling professional journey.</p>
+          </div>
+    
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Our Team</a></li>
+              <li><a href="">Partners</a></li>
+              <li><a href="">For Candidates</a></li>
+              <li><a href="">For Employers</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-section">
+            <h3>Job Categories</h3>
+            <ul>
+              <li><a href="">Telecommunications</a></li>
+              <li><a href="">Hotels & Tourism</a></li>
+              <li><a href="">Construction</a></li>
+              <li><a href="">Education</a></li>
+              <li><a href="">Financial Services</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>Don't miss out on valuable resources that can help you achieve your professional goals.</p>
+            <input type="email" placeholder="Enter your email...">
+            <button type="submit" class="subscribe">Subscribe now</button>
+          </div>
+        </div>
+      </section>
 </body>
 </html>
