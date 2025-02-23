@@ -34,10 +34,10 @@
                         /* END Definition List Styling */
   
                         /* START Figure and Image Styling */
-  .team-info figure {
-    margin: 0 auto;
-    max-width: 300px;
-  }
+.team-info figure {
+        max-width: 300px;
+        float: right;
+}
   
   .team-info img {
     width: 100%;
@@ -50,6 +50,12 @@
     padding: 0.5rem;
     font-style: italic;
   }
+
+  .team-info::after {
+    content: "";
+    display: table;
+    clear: both;
+}
                         /* END Figure and Image Styling */
                         
                         /* START Table Styling */
