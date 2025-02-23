@@ -60,14 +60,22 @@
               </div>
               
               <div class="form-label">
-                <label for="gender">Gender</label>
-                <div class="radio-group">
-                  <input type="radio" id="male" name="gender" value="male">
-                  <label for="male">Male</label>
-                  <input type="radio" id="female" name="gender" value="female">
-                  <label for="female">Female</label>
-                  <input type="radio" id="other" name="gender" value="other">
-                  <label for="other">Other</label>
+                <div class="gender-container">
+                  <label for="gender">Gender:</label>
+                  <div class="radio-group">
+                    <div>
+                      <input type="radio" id="male" name="gender" value="male">
+                      <label for="male">Male</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="female" name="gender" value="female">
+                      <label for="female">Female</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="other" name="gender" value="other">
+                      <label for="other">Other</label>
+                    </div>
+                  </div>
                 </div>
               </div>
               
@@ -112,7 +120,7 @@
               </div>
               
               <div class="form-label">
-                <label>Skills</label>
+                <label> Skills </label>
                 <div class="checkbox-group">
                   <input type="checkbox" id="skill1" name="skills" value="HTML">
                   <label for="skill1">HTML</label>
@@ -124,8 +132,10 @@
               </div>
               
               <div class="form-label">
-                <label for="otherSkills">Other skills</label>
-                <textarea id="otherSkills" name="otherSkills" rows="4" cols="50"></textarea>
+                <div class="form-row">
+                  <label for="otherSkills">Other skills</label>
+                  <textarea id="otherSkills" name="otherSkills" rows="4" cols="50"></textarea>
+                </div>
               </div>
               
               <div class="form-buttons">

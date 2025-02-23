@@ -169,7 +169,7 @@ header{
 button{
     outline: none;
     border: none;
-    background-color: rgb(59, 137, 255);
+    background-color: #309689;
     margin-right: 15px;
     border-radius: 10px;
     padding: 5px;
@@ -308,9 +308,8 @@ button a:hover{
     margin-bottom: 40px;
 }
 
-.learn-more{
-    color: rgb(41, 180, 255);
-    text-decoration: underline;
+.text.container learn-more{
+    color: #309689;
 }
                         /*END Description 1*/
 
@@ -449,8 +448,10 @@ header{
 
 .form{
     display: flex;
+    margin-top: 100px;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 
 .form-container-job-apply {
@@ -458,18 +459,14 @@ header{
     flex-direction: column; /* Stack form elements vertically */
     align-items: center;   /* Center form elements horizontally */
     max-width: 500px;      /* Set maximum width */
-    margin: 0 auto;        /* Center the container */
-    background-color: rgba(0, 255, 13, 0.205);
+    margin: 50px auto;        /* Center the container */
+    background-color: #EBF5F4;
+    max-width: 50%;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     padding: 30px;
     box-sizing: border-box; /* Ensure padding doesn't affect width */
     margin-bottom : 50px;
-}
-
-.banner-apply h1{ 
-    text-align: center;
-
 }
 
 .form-label{
@@ -482,13 +479,89 @@ header{
     margin-bottom: 10px;
     align-items: center;
     align-content: center;
+    align-items: center;
 }
 .form-label input{
     font-size: 20px;
     margin-bottom: 10px;
     align-items: center;
-    align-content: center
+    align-content: center;
+    display: inline;   
 }    
+.form-label textarea{
+    font-size: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    align-content: center
+}
+
+.form-label label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    align-content: center
+}
+
+.gender-container {
+    display: flex;
+    align-items: center; /* Vertically align label and radio buttons */
+    gap: 1rem; /* Space between label and radio buttons */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-bottom: 1rem; /* Add spacing below the group */
+  }
+  
+  .gender-container label {
+    flex: 0 0 auto; /* Prevent label from stretching */
+    white-space: nowrap; /* Keep label text on one line */
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 0.5rem; /* Space between radio buttons */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+  }
+  
+  .radio-group div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between radio and label */
+  }
+
+  /*Skills*/
+  
+
+.text.area{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-buttons input{
+    outline: none;
+    border: none;
+    background-color: #309689;
+    color: white;
+    margin-right: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 120px;
+    cursor: pointer; 
+    
+}
+.form-row {
+  display: flex;
+  align-items: flex-start; /* Align label with textarea top */
+  gap: 1rem; /* Space between label and textarea */
+}
+
+.form-row label {
+  flex: 0 0 auto; /* Prevent label from stretching */
+  white-space: nowrap; /* Keep label text on one line */
+}
+
+.form-row textarea {
+  flex: 1; /* Expand textarea to fill remaining space */
+  min-width: 300px; /* Minimum width for small screens */
+}
 
 .iframe-container{
     display: flex;         
@@ -505,6 +578,7 @@ header{
 
 
                        /*Job Page*/   
+
 .recentjobs{
     font-size: 25px;
     margin-left: 90px;
@@ -517,10 +591,10 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(229, 184, 255);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 8px rgba(0.1, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
 }
 
@@ -564,6 +638,12 @@ header{
 i{
     color: rgb(29, 192, 116);
 }
+
+.job-container button {
+    size: 100px;
+    color:#f0f0f0;
+}
+
 
 
             /* START Enhancement Page */  
