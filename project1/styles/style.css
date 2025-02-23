@@ -506,7 +506,6 @@ header{
     gap: 1rem; /* Space between label and radio buttons */
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-bottom: 1rem; /* Add spacing below the group */
   }
   
   .gender-container label {
@@ -527,24 +526,45 @@ header{
   }
 
   /*Skills*/
+  .skill-tickbox-container {
+    display: flex; /* Enable horizontal layout */
+    align-items: center; /* Vertically align items */
+    gap: 1rem; /* Space between label and checkboxes */
+  }
   
+  .checkbox-group {
+    display: flex; /* Enable horizontal layout for checkboxes */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 0.5rem; /* Space between checkboxes */
+  }
+  
+  .checkbox-group div {
+    display: flex; /* Align checkbox and label */
+    align-items: center; /* Vertically align checkbox and label */
+    }  
+    textarea {
+        text-align: left; /* Align text to the left */
+        vertical-align: top; /* Align text to the top */
+        padding: 0.5rem; /* Optional: Add padding if needed */
+        text-indent: 0; /* Optional: Remove text indent */
+      }
 
-.text.area{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.form-buttons input{
-    outline: none;
-    border: none;
-    background-color: #309689;
-    color: white;
-    margin-right: 15px;
-    border-radius: 10px;
-    padding: 5px;
-    width: 120px;
-    cursor: pointer; 
+      .form-buttons input {
+        padding: 12px 24px; /* Increase button size */
+        font-size: 1rem;    /* Adjust font size */
+        border-radius: 8px; /* Optional: Adjust border radius */
+        background-color: #309689; /* Green background for Apply */
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 0 5px; /* Add spacing between buttons */
+      }
+      
+      .form-buttons input:hover {
+        background-color: #309689; /* Darker green on hover */
+      }
     
-}
 .form-row {
   display: flex;
   align-items: flex-start; /* Align label with textarea top */
